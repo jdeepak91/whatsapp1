@@ -1,0 +1,138 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+/* header */
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default{
+    color:color($colors,white);
+}
+.bar-button-menutoggle-md ion-icon{font-size: 2.8rem;}
+.toolbar{
+    position:relative;
+}
+// .toolbar-content{
+//     position: absolute;
+//     left:0;
+//     right:0;
+//     z-index: 99;
+// }
+.searchbar-show-cancel {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+.toolbar-background-md,.segment-md .segment-button{
+    background:color($colors, primary);
+}
+.toolbar-title-md,.segment-md .segment-button{
+    color:color($colors,white);
+}
+.segment-md .segment-button{
+   opacity:1;
+}
+.custom-segment .badge-md{
+    background-color:color($colors,danger);
+    text-align: right;
+    padding:3px;
+    margin-left:4px;
+}
+.segment-md .segment-button.activated, .segment-md .segment-button.segment-activated{
+    border-bottom-color:color($colors,white);
+}
+.segment-md .segment-button{
+    border-bottom-color:transparent;
+    border-bottom-width: 3px;    
+}
+.profile-card{
+    margin:0;
+    border-radius:0;
+    width: 100%;
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+.profile-card:before{
+    content:"";
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+}
+.profile-card .card-title{
+    position: absolute;
+    bottom:15px;
+    left:24px;
+    font-size:2rem;
+    color: color($colors, white);
+}
+.menu-list{
+    &.bottom{
+        position: absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        border-top:1px solid color($colors,grey);
+    }
+    margin:0;
+    ion-icon{
+        padding:0 10px;
+        font-size: 2.2rem;
+    }
+    button{
+        padding-left: 0;
+    }
+    .label-md{
+        // margin:0;
+    }
+    .item-block .item-inner{
+        padding-left:10px;
+        border:0;
+    }
+}
+.gutters-1{
+    [col-6]{
+        padding:1px;
+    }
+    .card{
+        margin:0;
+        width:100%;
+        height:150px;
+        position: relative;
+        box-shadow: none;
+        img{
+            height:auto;
+        }
+        .card-title,.card-subtitle{
+            position:absolute;
+            bottom:12%;
+            left:4%;
+            color:color($colors,white);
+            font-size: 1.8rem;
+        }
+        .card-subtitle{
+            bottom:5%;
+            font-size: 1rem;
+        }
+    }
+    ion-fab{
+        position:fixed;
+    }
+}
+.popover-content .user-popover{
+    width:175px;
+}

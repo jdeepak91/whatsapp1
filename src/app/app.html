@@ -1,0 +1,36 @@
+<ion-menu [content]="content">  
+     <!--<ion-header>
+          <ion-toolbar>
+               <!--<ion-title left>Menu</ion-title>
+          </ion-toolbar>  
+     </ion-header>-->
+         <ion-content class="card-background-page">
+            <ion-card class="profile-card">
+                <img src="assets/imgs/deepak.jpg"/>
+                <div class="card-title">Deepak Jawalkar</div>
+            </ion-card>
+            <ion-list class="menu-list">                
+               <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+                <ion-icon name="{{p.icon}}"></ion-icon>{{p.title}}
+               </button>
+            </ion-list>
+            <ion-list class="menu-list bottom" >
+                <ion-item>About</ion-item>  
+                <ion-item>Facebook</ion-item>
+                <ion-item text-right><small>V 1.1</small></ion-item>
+            </ion-list>
+         </ion-content>
+         
+         <!--<ion-card>
+            <img src="assets/imgs/salesforce.png"/>
+            <ion-card-content>
+                <ion-card-title>
+                Nine Inch Nails Live
+                </ion-card-title>
+                
+            </ion-card-content>
+            
+          </ion-card>-->
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content ></ion-nav>

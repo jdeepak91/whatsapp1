@@ -1,0 +1,19 @@
+.thumbnail-wrapper{
+    h3{
+        color:color($colors,black);
+    }
+    ion-badge{
+        float:right;
+    }
+    label{
+        margin:0 8px 0 0;
+    }
+    ion-thumbnail img{
+        width:70px;
+        height:70px;
+    }
+    .item ion-thumbnail{
+        margin:8px 16px 0px 0;
+    }
+}
+
