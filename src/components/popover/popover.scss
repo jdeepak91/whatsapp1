@@ -1,12 +1,15 @@
 .popover-content,.popover-md .popover-content {
     width:175px; 
 }
+.user-popover .list{
+    margin-bottom:0;
+}
 .item-md ion-icon[item-start] + .item-input{
-    margin-right:8px;
+    margin-left:8px;
 }
 .item-md ion-icon[item-left] + .item-inner, .item-md ion-icon[item-left] + .item-input,
 .item-md ion-icon[item-start] + .item-inner, .item-md ion-icon[item-start] + .item-input{
-    margin-right:8px;
+    margin-left:8px;
  }
 .item > ion-icon, .item-inner > ion-icon{
     font-size: 2.2rem;
