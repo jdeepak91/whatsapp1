@@ -8,6 +8,8 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { NormalListPage } from '../pages/normal-list/normal-list';
 import { ContactPage } from '../pages/contact/contact';
+import { LoginPage } from '../pages/login/login';
+import { ChatsPage } from '../pages/chats/chats';
 import { PopoverComponent } from '../components/popover/popover';
 
 @NgModule({
@@ -16,6 +18,8 @@ import { PopoverComponent } from '../components/popover/popover';
     HomePage,
     ContactPage,
     NormalListPage,
+    LoginPage,
+    ChatsPage,
     PopoverComponent
   ],
   imports: [
@@ -28,6 +32,8 @@ import { PopoverComponent } from '../components/popover/popover';
     HomePage,
     ContactPage,
     NormalListPage,
+    LoginPage,
+    ChatsPage,
     PopoverComponent
   ],
   providers: [

@@ -7,6 +7,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { NormalListPage } from '../pages/normal-list/normal-list';
 import { ContactPage } from '../pages/contact/contact';
+import {LoginPage} from '../pages/login/login';
 @Component({
   templateUrl: 'app.html'
 })
@@ -18,7 +19,7 @@ export class MyApp {
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
     this.pages = [
-      { title: 'Favorites', component: HomePage, icon:'star' },
+      { title: 'Favorites', component: LoginPage, icon:'star' },
       { title: 'Status', component: NormalListPage,icon:'information-circle'  },
       { title: 'Profile', component: ContactPage ,icon:'contact' },
       { title: 'Settings', component: ContactPage ,icon:'settings' }
